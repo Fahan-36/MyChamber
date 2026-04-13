@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-slate-50 text-slate-800 font-sans antialiased;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(circle at 8% 10%, rgba(186, 230, 253, 0.3), transparent 30%),
+    radial-gradient(circle at 88% 0%, rgba(153, 246, 228, 0.26), transparent 32%),
+    radial-gradient(circle at 85% 85%, rgba(165, 180, 252, 0.1), transparent 32%);
+}
+
+.dark body {
+  @apply bg-slate-950 text-slate-100;
+}
+
+.glass-card {
+  @apply bg-white/75 backdrop-blur-xl border border-white/70 shadow-soft dark:bg-slate-900/65 dark:border-slate-700/70;
+}
+
+.primary-button {
+  @apply inline-flex items-center justify-center gap-2 rounded-2xl bg-brand-500 px-4 py-2.5 text-sm font-semibold text-white transition hover:scale-[1.02] hover:bg-brand-600 active:scale-[0.98];
+}
+
+.secondary-button {
+  @apply inline-flex items-center justify-center gap-2 rounded-2xl border border-slate-200 bg-white px-4 py-2.5 text-sm font-semibold text-slate-700 transition hover:scale-[1.02] hover:border-brand-200 hover:text-brand-700 active:scale-[0.98] dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200;
+}
+
+.gradient-text {
+  @apply bg-gradient-to-r from-brand-600 via-teal-500 to-cyan-400 bg-clip-text text-transparent;
+}
+
+/* Hero section background - light mode maintains original gradient, dark mode uses dark slate gradient */
+.bg-hero-glow {
+  background-image: 
+    radial-gradient(circle at 10% 10%, rgba(76, 184, 200, 0.24), transparent 35%), 
+    radial-gradient(circle at 80% 20%, rgba(34, 197, 94, 0.2), transparent 32%), 
+    linear-gradient(135deg, #f8fdff 0%, #f2f8ff 40%, #eefaf8 100%);
+}
+
+.dark .bg-hero-glow {
+  background-image: linear-gradient(135deg, #020617, #0f172a, #1e293b);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#7dd3fc, #14b8a6);
+  border-radius: 100px;
+}
+
+/* ── Doctor image pulsing rings ── */
+@keyframes ring-pulse {
+  0%, 100% { opacity: 0.28; transform: scale(1); }
+  50%       { opacity: 0.06; transform: scale(1.06); }
+}
+@keyframes ring-pulse-outer {
+  0%, 100% { opacity: 0.12; transform: scale(1); }
+  50%       { opacity: 0;    transform: scale(1.14); }
+}
+.animate-ring-pulse       { animation: ring-pulse       3s ease-in-out infinite; }
+.animate-ring-pulse-outer { animation: ring-pulse-outer 3s ease-in-out infinite 0.6s; }
+
+/* ── ECG line animation (vitals card) ── */
+@keyframes ecg-draw {
+  from { stroke-dashoffset:  130; }
+  to   { stroke-dashoffset: -130; }
+}
+.animate-ecg path {
+  stroke-dasharray: 130;
+  animation: ecg-draw 2s linear infinite;
+}
+
+/* ── Background heartbeat sweep ── */
+@keyframes ecg-bg-sweep {
+  from { stroke-dashoffset:  1800; }
+  to   { stroke-dashoffset: -1800; }
+}
+.animate-ecg-bg path {
+  stroke-dasharray: 900;
+  animation: ecg-bg-sweep 10s linear infinite;
+}
+
+/* ── Subtle grain overlay for premium depth ── */
+.hero-noise {
+  background-image:
+    radial-gradient(circle at 25% 25%, rgba(255, 255, 255, 0.2) 0.4px, transparent 0.7px),
+    radial-gradient(circle at 70% 60%, rgba(56, 189, 248, 0.12) 0.3px, transparent 0.7px);
+  background-size: 3px 3px, 4px 4px;
+  mix-blend-mode: soft-light;
+}
+
+/* ── CTA button ambient glow pulse ── */
+@keyframes cta-glow {
+  0%, 100% { box-shadow: 0 0 18px 2px rgba(20,184,166,0.35), 0 4px 18px -6px rgba(20,184,166,0.5); }
+  50%       { box-shadow: 0 0 32px 6px rgba(20,184,166,0.55), 0 6px 24px -4px rgba(34,211,238,0.45); }
+}
+.animate-cta-glow { animation: cta-glow 2.6s ease-in-out infinite; }
