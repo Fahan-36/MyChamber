@@ -29,11 +29,17 @@ MyChamber focuses on:
   <img src="https://github.com/user-attachments/assets/6bfe87c2-083c-4e90-950e-aa4883bdd1ec" width="800"/>
 </p>
 
-### 🔍 Doctor Finding Page
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/67819117-4cdb-4c93-ba82-9a0fde41061c" width="800"/>
+### 🔐 Login Page
+
+<p <img src="https://github.com/user-attachments/assets/67819117-4cdb-4c93-ba82-9a0fde41061c" width="800"/>
 </p>
 
+### 🔍 Doctor Finding Page
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/788941ea-5196-4108-9dd2-54064bfaeed9" width="800"/>
+</p>
+ 
 ### 👤 Patient Dashboard
 <p align="center">
   <img src="https://github.com/user-attachments/assets/0d363e60-a006-43cc-9b2c-9211dd23112d" width="800"/>
