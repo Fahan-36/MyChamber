@@ -46,10 +46,10 @@ MyChamber focuses on:
   <img src="https://github.com/user-attachments/assets/0d363e60-a006-43cc-9b2c-9211dd23112d" width="800"/>
 </p>
 
-### 🩺 Doctor Dashboard (Schedule & Patient Management)
+### 🩺 Doctor Dashboard 
 <p align="center"> <img src="https://github.com/user-attachments/assets/5002dc66-31f0-4b36-a6ce-1ab4e83a4f9d" width="800"/> </p>
 
-### 📊 Admin Dashboard (System Monitoring & Control)
+### 📊 Admin Dashboard 
 <p align="center"> <img src="https://github.com/user-attachments/assets/92b3ede0-2e07-4433-979c-12d20a3d2b6b" width="800"/> </p>
 
 
