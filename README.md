@@ -22,7 +22,29 @@ MyChamber focuses on:
 - 🧾 Doctor clinical history module with report upload support
 - 📊 Admin monitoring for doctors, patients, appointments, and reviews
 
-# 📸 Screenshots 
+## 📸 Screenshots
+
+### 🏠 Homepage
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/6bfe87c2-083c-4e90-950e-aa4883bdd1ec" width="800"/>
+</p>
+
+### 🔍 Doctor Finding Page
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/67819117-4cdb-4c93-ba82-9a0fde41061c" width="800"/>
+</p>
+
+### 👤 Patient Dashboard
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/0d363e60-a006-43cc-9b2c-9211dd23112d" width="800"/>
+</p>
+
+### 🩺 Doctor Dashboard (Schedule & Patient Management)
+<p align="center"> <img src="https://github.com/user-attachments/assets/5002dc66-31f0-4b36-a6ce-1ab4e83a4f9d" width="800"/> </p>
+
+### 📊 Admin Dashboard (System Monitoring & Control)
+<p align="center"> <img src="https://github.com/user-attachments/assets/92b3ede0-2e07-4433-979c-12d20a3d2b6b" width="800"/> </p>
+
 
 
 ## 🛠️ Tech Stack
