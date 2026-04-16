@@ -31,7 +31,8 @@ MyChamber focuses on:
 
 ### 🔐 Login Page
 
-<p <img src="https://github.com/user-attachments/assets/67819117-4cdb-4c93-ba82-9a0fde41061c" width="800"/>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/67819117-4cdb-4c93-ba82-9a0fde41061c" width="800"/>
 </p>
 
 ### 🔍 Doctor Finding Page
